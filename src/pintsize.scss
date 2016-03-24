@@ -409,7 +409,7 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
     /* Offsets for md media query */
     @for $i from 0 through $columns {
 
-        .col__md_offset--#{$i} {
+        .col__md-offset--#{$i} {
 
             margin-left: column($i);
 
@@ -445,7 +445,7 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
     /* Offsets for lg media query */
     @for $i from 0 through $columns {
 
-        .col__lg_offset--#{$i} {
+        .col__lg-offset--#{$i} {
 
             margin-left: column($i);
 
