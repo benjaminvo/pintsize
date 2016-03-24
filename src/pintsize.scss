@@ -1,16 +1,16 @@
-/*-------------------------------------------------------*\
+//-------------------------------------------------------
+//
+//    Pintsize
+//    Url: http://www.pintsize.io
+//    Github: https://github.com/alistairtweedie/Pintsize/
+//
+//-------------------------------------------------------
 
-    Pintsize
-    Url: http://www.pintsize.io
-    Github: https://github.com/alistairtweedie/Pintsize/
-
-/*-------------------------------------------------------*/
 
 
-
-/*-------------------------------------------------------*\
-    #grid config
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #grid config
+//-------------------------------------------------------
 
 // Number of columns
 $columns: 12 !default;
@@ -36,9 +36,9 @@ $lg: 64em;
 $old-ie: false !default;
 
 
-/*-------------------------------------------------------*\
-    #grid calculations
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #grid calculations
+//-------------------------------------------------------
 
 //percentage function
 @function percentage($size, $width) {
@@ -59,9 +59,10 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 }
 
 
-/*-------------------------------------------------------*\
-    #clearfix mixin
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #clearfix mixin
+//-------------------------------------------------------
+
 
 @mixin clearfix() {
 
@@ -81,9 +82,10 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 
 }
 
-/*-------------------------------------------------------*\
-    #box sizing mixin
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #box-sizing mixin
+//-------------------------------------------------------
+
 
 @mixin box-sizing {
 
@@ -94,9 +96,9 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 }
 
 
-/*-------------------------------------------------------*\
-    #media query mixin
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #media query mixin
+//-------------------------------------------------------
 
 @mixin respond-to($point) {
 
@@ -108,11 +110,11 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 
 }
 
-/*-------------------------------------------------------*\
-    #older IE mixin
-    - support for IE9 and IE8.
-    - $old-ie in grid config must be true
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//  #older IE mixin
+//  - support for IE9 and IE8.
+//  - $old-ie in grid config must be true
+//-------------------------------------------------------
 
 @mixin old-ie {
 
@@ -128,11 +130,11 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 
 }
 
-/*-------------------------------------------------------*\
-    #gutter mixin
-    - If $fixed-gutter-size is set to true this will output
-    the $gutter-width as a fixed value and not percentage
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #gutter mixin
+//    - If $fixed-gutter-size is set to true this will output
+//    the $gutter-width as a fixed value and not percentage
+//-------------------------------------------------------
 
 
 @mixin gutter-output {
@@ -153,9 +155,9 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 }
 
 
-/*-------------------------------------------------------*\
-    #The grid
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #The grid
+//-------------------------------------------------------
 
 .container {
 
@@ -185,10 +187,10 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 }
 
 
-/*-------------------------------------------------------*\
-    #flexbox helper classes
-    - docs for browser support to be provided
-\*-------------------------------------------------------*/
+//-------------------------------------------------------
+//    #flexbox helper classes
+//    - docs for browser support to be provided
+//-------------------------------------------------------
 
 .flex--auto {
 
@@ -406,7 +408,7 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 
     }
 
-    /* Offsets for md media query */
+    // Offsets for md media query
     @for $i from 0 through $columns {
 
         .col__md-offset--#{$i} {
@@ -442,7 +444,7 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 
     }
 
-    /* Offsets for lg media query */
+    // Offsets for lg media query
     @for $i from 0 through $columns {
 
         .col__lg-offset--#{$i} {
