@@ -388,6 +388,7 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
 // generates medium breakpoint column classes
 @include respond-to($md)  {
 
+
     @for $i from 1 through $columns {
 
         .col__md--#{$i} {
@@ -400,6 +401,17 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
                 width: column($i);
 
             }
+
+        }
+
+    }
+
+    /* Offsets for md media query */
+    @for $i from 0 through $columns {
+
+        .col__md_offset--#{$i} {
+
+            margin-left: column($i);
 
         }
 
@@ -425,6 +437,17 @@ $grid-width: ($columns * $column-width) + (($columns ) * $gutter-width);
                 width: column($i);
 
             }
+
+        }
+
+    }
+
+    /* Offsets for lg media query */
+    @for $i from 0 through $columns {
+
+        .col__lg_offset--#{$i} {
+
+            margin-left: column($i);
 
         }
 
